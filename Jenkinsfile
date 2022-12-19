@@ -8,15 +8,13 @@ pipeline{
                 docker {
                     image 'openjdk:11'
                 }
-         }
+            }
             steps{
-             script{
-               withSonarQubeEnv(credentialsId: 'Soanr') {
-
-                sh 'chmod +x gradlew'
-                sh './gradlew sonarqube'
- 
-              }
+                script{
+                    withSonarQubeEnv(credentialsId: 'soanr') {
+                            sh 'chmod +x gradlew'
+                            sh './gradlew sonarqube'
+                    }
 
              }
                 
