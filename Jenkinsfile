@@ -2,7 +2,7 @@ pipeline{
     agent any 
     environment{
         VERSION = "${env.BUILD_ID}"
-        DOCKERHUB_CREDENTIALS=credentials('Password')
+        
         
     }
     stages{
