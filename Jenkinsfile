@@ -24,7 +24,7 @@ pipeline{
 
                     withCredentials([string(credentialsId: 'docker_pass', variable: 'docker_password')]) {
     // some block
-                    sh ''''
+                    sh '''
 
                     docker build -t 20.12.200.148:8083/Aarvik:${VERSION} .
                     docker login -u admin -p $docker_password 20.12.200.148:8083
