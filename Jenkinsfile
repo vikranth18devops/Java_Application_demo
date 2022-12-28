@@ -31,7 +31,7 @@ pipeline{
                     docker push 20.12.200.148:8083/Aarvik:${VERSION}
                     docker rmi 20.12.200.148:8083/Aarvik:${VERSION}
 
-                    ''''
+                    '''
 }
                     
                 }
