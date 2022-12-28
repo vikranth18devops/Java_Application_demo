@@ -15,7 +15,7 @@ pipeline{
                             sh './gradlew sonarqube'
                     }
 
-                  timeout(time: 1, unit: 'HOURS') 
+           
 
                 }  
             }
